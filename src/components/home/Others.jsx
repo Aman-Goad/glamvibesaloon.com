@@ -104,7 +104,7 @@ const partners = [
     className="min-h-screen"
     >
       <div className='Highlights'>
-        <h1 className='text-[4vw] text-white text-center font-bold py-6'>Our <span className='text-custom-primary'>Highlights</span></h1>
+        <h1 className='sm:text-[4vw] text-[6vh] text-white text-center font-bold py-6'>Our <span className='text-custom-primary'>Highlights</span></h1>
 
         <div className="flex flex-wrap justify-center gap-12 mt-12 px-8">
           {highlightsData.map((highlight) => (
@@ -113,8 +113,8 @@ const partners = [
                 className="absolute inset-0 bg-cover bg-center transition-all duration-300"
                 style={{ backgroundImage: `url(${highlight.image})` }}
               ></div>
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-10 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-0 sm:translate-y-full sm:group-hover:translate-y-0 transition-transform duration-300">
                 <h2 className="text-2xl font-bold mb-2">{highlight.title}</h2>
                 <p className="text-sm leading-relaxed mb-4">{highlight.description}</p>
                 <button className="bg-custom-secondary hover:bg-custom-primary text-white font-semibold py-2 px-4 rounded-full transition duration-300">
@@ -127,12 +127,12 @@ const partners = [
       </div>
 
       <div className="partners bg-white mt-16">
-        <h1 className='text-[4vw] text-black text-center font-bold py-6'>Our <span className='text-custom-primary'>Partners</span></h1>
+        <h1 className='sm:text-[4vw] text-[6vh] text-black text-center font-bold py-6'>Our <span className='text-custom-primary'>Partners</span></h1>
 
-        <Marquee className="flex justify-center items-center py-8" speed={130} >
+        <Marquee className="flex justify-center items-center py-8  max-w-7xl mx-auto" speed={130} gradient={true} >
           {partners.map((partner) => (
             <div className="mx-10">
-              <img src={partner.image} alt={partner.title} className="h-36 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+              <img src={partner.image} alt={partner.title}  className="sm:h-36 h-24   w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
           ))}
         </Marquee>

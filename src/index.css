@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+ 
+html,body{
+height: 100%;
+width: 100%;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8A2BE2; /* Custom primary color (purple) */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b269e7; /* Darker shade of purple on hover */
+}
+
+/* For Firefox */
+
+
+
+/* Selection styles */
+::selection {
+  background-color: #b379ea; /* Custom primary color (purple) */
+  color: #ffffff; /* White text for contrast */
+}
+
+::-moz-selection {
+  background-color: #8A2BE2; /* Custom primary color (purple) */
+  color: #ffffff; /* White text for contrast */
+}
+
+
+.title{
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+}

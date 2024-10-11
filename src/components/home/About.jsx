@@ -3,12 +3,12 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-row items-start justify-between p-8 px-16  max-w-screen-xl mx-auto gap-8 pb-24">
+      <div className="flex flex-col-reverse mt-10 sm:mt-0 sm:flex-row items-start justify-between p-4 sm:px-16  max-w-screen-xl mx-auto gap-8 pb-24">
         <div className="w-full h-[55vh] md:w-1/2 mb-8 md:mb-0">
-          <img src="/images/about.jpg" alt="About GlamVibe Salon" className="w-full h-full object-cover rounded-lg shadow-lg" />
+          <img src="/images/about.jpg" alt="About GlamVibe Salon" loading='lazy' className="w-full h-full object-cover rounded-lg shadow-lg" />
         </div>
         <div className="w-full md:w-1/2 md:pl-8">
-          <h2 className="text-[3vw] font-bold mb-4 text-custom-primary">About GlamVibe Salon</h2>
+          <h2 className="sm:text-[3vw] text-[4vh] font-bold mb-4 text-custom-primary">About GlamVibe Salon</h2>
           <p className="text-gray-700 mt-8 mb-2 ">
             GlamVibe Salon is your premier destination for cutting-edge hair styling and beauty treatments. Our team of expert stylists is dedicated to helping you look and feel your best. With a focus on personalized service and the latest trends, we're here to elevate your style and boost your confidence.
           </p>

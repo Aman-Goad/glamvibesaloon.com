@@ -3,6 +3,7 @@ import  Navbar  from './components/utils/Navbar'
 import Home from './components/home/Home' 
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/utils/Footer'
+import Service from './components/service/service'
 
 const App = () => {
   const location = useLocation();
@@ -15,6 +16,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/services' element={<Service />} />
       </Routes>
       <Footer />
     </div>

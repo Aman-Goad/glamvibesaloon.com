@@ -8,7 +8,7 @@ const Appointment = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "379d7b37-1aed-444c-affe-09ed08831892");
+    formData.append("access_key", "8d85e3e0-738f-41bc-90df-398ec927394d");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -40,7 +40,7 @@ const Appointment = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-custom-primary focus:border-transparent"
                 required
               />
             </div>
@@ -50,7 +50,7 @@ const Appointment = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-custom-primary focus:border-transparent"
                 required
               />
             </div>
@@ -60,7 +60,7 @@ const Appointment = () => {
                 type="tel"
                 id="phoneNumber"
                 name="phoneNumber"
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-custom-primary focus:border-transparent"
                 required
               />
             </div>
@@ -73,10 +73,18 @@ const Appointment = () => {
                 required
               >
                 <option value="">Select a service</option>
-                <option value="haircut">Haircut</option>
-                <option value="coloring">Coloring</option>
-                <option value="styling">Styling</option>
-                <option value="makeup">Makeup</option>
+                <option value="facial" className='capitalize'>facial</option>
+                <option value="bleach" className='capitalize'>bleach</option>
+                <option value="clean up" className='capitalize'>clean up</option>
+                <option value="face wax" className='capitalize'>face wax</option>
+                <option value="normal wax" className='capitalize'>normal wax</option>
+                <option value="rica wax" className='capitalize'>rica wax</option>
+                <option value="full body work" className='capitalize'>full body work</option>
+                <option value="hair treatment" className='capitalize'>hair treatment</option>
+                <option value="hair cutting" className='capitalize'>hair cutting</option>
+                <option value="pedicure manicure" className='capitalize'>pedicure manicure</option>
+                <option value="face hair" className='capitalize'>face hair</option>
+                
               </select>
             </div>
             <div className="mb-4">
@@ -87,7 +95,7 @@ const Appointment = () => {
                     type="radio"
                     name="gender"
                     value="male"
-                    className="mr-2"
+                    className="mr-2 accent-custom-primary"
                   />
                   Male
                 </label>
@@ -96,7 +104,7 @@ const Appointment = () => {
                     type="radio"
                     name="gender"
                     value="female"
-                    className="mr-2"
+                    className="mr-2 accent-custom-primary"
                   />
                   Female
                 </label>

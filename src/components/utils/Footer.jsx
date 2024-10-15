@@ -24,8 +24,8 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
               <ul className="space-y-2 text-gray-200">
-                <li>123 Beauty Street</li>
-                <li>Glamour City, GC 12345</li>
+                <li>Shop No. 913, Near Milan Restaurant</li>
+                <li>Sector 10, Faridabad</li>
                 <li>Phone: (123) 456-7890</li>
                 <li>Email: info@glamvibesalon.com</li>
               </ul>

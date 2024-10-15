@@ -54,3 +54,7 @@ width: 100%;
     font-family: "Dancing Script", cursive;
     font-weight: 700;
 }
+
+input{
+    caret-color: #8A2BE2;
+}

@@ -31,15 +31,16 @@ const Navbar = () => {
   const navLinks = [
     { to: "/", text: "Home", current: location.pathname === "/" },
     { to: "/services", text: "Services", current: location.pathname === "/services" },
-    { to: "/pricing", text: "Pricing", current: location.pathname === "/pricing" },
-    { to: "/contact", text: "Contact", current: location.pathname === "/contact" },
+    { to: "/", text: "Pricing", current: location.pathname === "/pricing" },
+    { to: "/", text: "Contact", current: location.pathname === "/contact" },
   ]
 
   return (
     <nav className="bg-transparent backdrop-blur-sm fixed w-full top-0 z-50 border-gray-200">
-      <div className="max-w-screen-xl flex flex-row sm:flex-row flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-row sm:flex-row flex-wrap items-center justify-between mx-auto p-4 ">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse" onClick={handleLinkClick}>
-          <span className="self-center text-2xl font-bold whitespace-nowrap bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text">GLAMVIBESALON</span>
+          <img src="/images/glamvibe.svg" alt="GlamVibes Salon" className="w-[10vw] h-[10vh]  object-cover pt-4" />
+          
         </Link>
         
         <button 

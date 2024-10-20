@@ -3,7 +3,7 @@ import  Navbar  from './components/utils/Navbar'
 import Home from './components/home/Home' 
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/utils/Footer'
-import Service from './components/service/service'
+import Service from "./components/service/service.jsx";
 
 const App = () => {
   const location = useLocation();

@@ -4,7 +4,8 @@ import Home from './components/home/Home'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/utils/Footer'
 import Service from './components/service/service'
-
+import Contact from './components/contact/Contact'
+import BookAppointment from './components/utils/Appointment'
 const App = () => {
   const location = useLocation();
 

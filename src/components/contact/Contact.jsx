@@ -68,7 +68,7 @@ const Contact = () => {
 
         <div className='w-full md:w-1/2 space-y-12'>
           <div>
-            <h1 className='text-[4vw] font-bold text-center text-custom-primary mb-8'>Contact Us</h1>
+            <h1 className='sm:text-[4vw] text-[6vh] font-bold text-center text-custom-primary mb-8'>Contact Us</h1>
           </div>
           <form onSubmit={handleSubmit} className='mt-8 space-y-6'>
             <div className='rounded-md shadow-sm space-y-4'>

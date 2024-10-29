@@ -25,8 +25,8 @@ const Footer = () => {
               <ul className="space-y-2 text-gray-200">
                 <li>Shop No. 913, Near Milan Restaurant</li>
                 <li>Sector 10, Faridabad</li>
-                <li>Phone: 9315005234 , 8368509568</li>
-                <li>Email: glamevibesaloon@gmail.com</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Email: info@glamvibesalon.com</li>
               </ul>
             </div>
             <div>

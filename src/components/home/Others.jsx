@@ -130,8 +130,8 @@ const partners = [
         <h1 className='sm:text-[4vw] text-[6vh] text-black text-center font-bold py-6'>Our <span className='text-custom-primary'>Partners</span></h1>
 
         <Marquee className="flex justify-center items-center py-8  max-w-7xl mx-auto" speed={130} gradient={true} >
-          {partners.map((partner) => (
-            <div className="mx-10">
+          {partners.map((partner, id) => (
+            <div key={id} className="mx-10">
               <img src={partner.image} alt={partner.title}  className="sm:h-36 h-24   w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
           ))}

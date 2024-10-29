@@ -23,10 +23,10 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
               <ul className="space-y-2 text-gray-200">
-                <li>Shop No. 913, Near Milan Restaurant</li>
-                <li>Sector 10, Faridabad</li>
-                <li>Phone: 9315005234, 8368509568</li>
-                <li>Email: glamevibesaloon@gmail.com</li>
+                <li><a href="https://maps.app.goo.gl/akTzqzc6NwfAhqds6" target="_blank" rel="noopener noreferrer" className="hover:text-custom-accent transition duration-300">Shop No. 913, Near Milan Restaurant</a></li>
+                <li><a href="https://maps.app.goo.gl/akTzqzc6NwfAhqds6" target="_blank" rel="noopener noreferrer" className="hover:text-custom-accent transition duration-300">Sector 10, Faridabad</a></li>
+                <li><a href="https://wa.me/919315005234" target="_blank" className="hover:text-custom-accent transition duration-300">Phone: 9315005234</a>, <a href="https://wa.me/918368509568" target="_blank" className="hover:text-custom-accent transition duration-300">8368509568</a></li>
+                <li><a href="mailto:glamevibesaloon@gmail.com" className="hover:text-custom-accent transition duration-300">Email: glamevibesaloon@gmail.com</a></li>
               </ul>
             </div>
             <div>

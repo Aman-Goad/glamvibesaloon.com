@@ -4,7 +4,8 @@ import Home from './components/home/Home'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/utils/Footer'
 import Service from './components/service/service'
-
+import Contact from './components/contact/Contact'
+import BookAppointment from './components/utils/Appointment'
 const App = () => {
   const location = useLocation();
 
@@ -12,14 +13,23 @@ const App = () => {
     window.scrollTo(0, 0);
   }, [location]);
   return (
-    <div className=''>
+    <>
+    <header>
       <Navbar />
-      <Routes>
+    </header>
+      <main className=''>
+        <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Service />} />
-      </Routes>
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/bookanappointment' element={<BookAppointment />} />
+
+        </Routes>
+
+      </main>
       <Footer />
-    </div>
+
+    </>
   )
 }
 

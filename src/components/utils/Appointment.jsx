@@ -28,7 +28,7 @@ const Appointment = () => {
 
   return (
     <div className="max-w-6xl mx-auto mt-6 sm:p-6 px-4 pt-4 bg-white mb-10 rounded-lg shadow-xl">
-      <h1 className="sm:text-[4vw] text-[6vh] font-bold text-center mb-20 leading-tight">Book an <span className='text-custom-primary'>Appointment</span></h1>
+      <h1 className="sm:text-[4vw] text-[6vh] font-bold text-center pt-8 mb-20 leading-tight">Book an <span className='text-custom-primary'>Appointment</span></h1>
 
       <div className="flex sm:flex-row flex-col-reverse gap-4 sm:gap-0 items-center">
         <div className="sm:w-1/2 sm:pr-8 w-full">
@@ -117,7 +117,7 @@ const Appointment = () => {
           <span className="block mt-4 text-center">{result}</span>
         </div>
         <div className="sm:w-1/2 w-full">
-          <img src="/images/appoint.jpg" alt="Salon appointment" loading='lazy' className="w-full sm:h-[60vh] h-[40vh] rounded-lg shadow-lg object-cover" />
+          <img src="/images/appoint.jpg" alt="Saloon appointment" loading='lazy' className="w-full sm:h-[60vh] h-[40vh] rounded-lg shadow-lg object-cover" />
         </div>
       </div>
     </div>

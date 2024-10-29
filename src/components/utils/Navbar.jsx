@@ -31,16 +31,14 @@ const Navbar = () => {
   const navLinks = [
     { to: "/", text: "Home", current: location.pathname === "/" },
     { to: "/services", text: "Services", current: location.pathname === "/services" },
-    { to: "/", text: "Pricing", current: location.pathname === "/pricing" },
-    { to: "/", text: "Contact", current: location.pathname === "/contact" },
+    { to: "/contact", text: "Contact", current: location.pathname === "/contact" },
   ]
 
   return (
     <nav className="bg-transparent backdrop-blur-sm fixed w-full top-0 z-50 border-gray-200">
-      <div className="max-w-screen-xl flex flex-row sm:flex-row flex-wrap items-center justify-between mx-auto p-4 ">
-        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse" onClick={handleLinkClick}>
-          <img src="/images/glamvibe.svg" alt="GlamVibes Salon" className="w-[10vw] h-[10vh]  object-cover pt-4" />
-          
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+        <Link to="/" className="flex items-center" onClick={handleLinkClick}>
+          <img src="/images/glamvibe.svg" alt="GlamVibes Saloon" className="sm:w-[10vw] sm:h-[10vh] w-[30vw] h-[7vh] object-cover pt-4" />
         </Link>
         
         <button 
@@ -55,7 +53,7 @@ const Navbar = () => {
         </button>
         
         <div className={`
-          fixed top-0 right-0 h-full w-full md:w-auto  md:bg-transparent
+          fixed top-0 right-0 h-full w-full md:w-auto md:bg-transparent
           transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
           transition-transform duration-300 ease-in-out
           md:relative md:transform-none md:transition-none
@@ -63,7 +61,7 @@ const Navbar = () => {
         `} id="navbar-multi-level">
           <button 
             onClick={toggleMenu}
-            className="absolute top-4 right-4  text-custom-secondary hover:text-custom-primary md:hidden"
+            className="absolute top-4 right-4 text-custom-secondary hover:text-custom-primary md:hidden"
             aria-label="Close menu"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -71,12 +69,12 @@ const Navbar = () => {
               <line x1="6" y1="6" x2="18" y2="18"></line>
             </svg>
           </button>
-          <ul className="flex flex-col sm:text-[1.2vw] text-[10vh] font-medium p-4 md:p-0 mt-16 md:mt-0 md:flex-row md:space-x-8 rtl:space-x-reverse bg-white md:bg-transparent h-screen sm:h-auto">
+          <ul className="flex flex-col font-medium p-4 md:p-0 mt-16 md:mt-0 md:flex-row md:items-center md:space-x-8 rtl:space-x-reverse bg-white md:bg-transparent h-screen md:h-auto">
             {navLinks.map((link, index) => (
-              <li key={index}>
+              <li key={index} className="md:flex md:items-center">
                 <Link 
                   to={link.to} 
-                  className={`block py-2 px-3 ${link.current ? 'text-custom-accent' : 'text-custom-secondary  hover:text-custom-primary'} rounded md:bg-transparent md:p-0 transition duration-300  `} 
+                  className={`block py-2 px-3 text-base ${link.current ? 'text-custom-accent' : 'text-custom-secondary hover:text-custom-primary'} rounded md:bg-transparent md:p-0 transition duration-300`}
                   aria-current={link.current ? "page" : undefined}
                   onClick={handleLinkClick}
                 >
@@ -84,6 +82,15 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <li className="md:flex md:items-center">
+              <Link 
+                to="/bookanappointment" 
+                className="block py-2 px-4 text-base text-white bg-custom-primary hover:bg-custom-secondary rounded-md transition duration-300 text-center md:whitespace-nowrap"
+                onClick={handleLinkClick}
+              >
+                Book an Appointment
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

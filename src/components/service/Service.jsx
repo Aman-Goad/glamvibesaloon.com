@@ -45,9 +45,9 @@ const ServiceCategory = ({ title, services, index }) => {
 const Service = () => {
   return (
     <>
-    <div className='min-h-screen bg-gradient-to-b from-pink-600 to-purple-800 mt-20 w-full flex flex-col items-center justify-center p-8'>
+    <div className='min-h-screen bg-gradient-to-b  from-purple-800 to-pink-600 pt-16 w-full flex flex-col items-center justify-center p-8'>
       <motion.h1 
-        className='text-4xl font-bold text-white mb-8'
+        className='sm:text-[4vw] text-[6vh] font-bold text-white mb-8'
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

@@ -10,7 +10,7 @@ const Heading = () => {
     return (
         <div className='w-full sm:h-screen flex flex-col justify-center items-center sm:mt-16 mt-[8vh]'>
             <h1 className='sm:text-[3vw] text-[5vh] text-center tracking-tight font-bold uppercase bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text'>
-                GlamVibe Salon Debuts with a Star-Studded Lineup of Icons
+                GlamVibe Saloon Debuts with a Star-Studded Lineup of Icons
             </h1>
 
             <div className="flex flex-col sm:flex-row justify-evenly gap-4 sm:gap-0 px-4 sm:px-0  mt-12 w-full">

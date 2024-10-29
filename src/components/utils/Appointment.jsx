@@ -8,7 +8,7 @@ const Appointment = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "8d85e3e0-738f-41bc-90df-398ec927394d");
+    formData.append("access_key", "66830bd6-c226-490e-af71-708204da92a2");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",

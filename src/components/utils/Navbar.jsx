@@ -37,9 +37,9 @@ const Navbar = () => {
 
   return (
     <nav className="bg-transparent backdrop-blur-sm fixed w-full top-0 z-50 border-gray-200">
-      <div className="max-w-screen-xl flex flex-row sm:flex-row flex-wrap items-center justify-between mx-auto p-4 ">
+      <div className="max-w-screen-xl flex flex-row sm:flex-row flex-wrap items-center justify-between mx-auto px-4 py-2 ">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse" onClick={handleLinkClick}>
-          <img src="/images/glamvibe.svg" alt="GlamVibes Salon" className="w-[10vw] h-[10vh]  object-cover pt-4" />
+          <img src="/images/glamvibe.svg" alt="GlamVibes Salon" className="sm:w-[10vw] sm:h-[10vh] w-[30vw] h-[11vh]  object-cover pt-4" />
           
         </Link>
         
